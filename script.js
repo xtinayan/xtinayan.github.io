@@ -17,40 +17,40 @@ function typeWriter(text, i, fnCallback) {
 }
 
 
-// Start typing "Hello World."
-typeWriter(document.getElementById('hello-world'), 'Hello World.', 0, function () {
-    // After "Hello World." is typed out, start typing "Type your stuff here:"
-    typeWriter(document.getElementById('prompt'), 'Type your stuff here:', 0, function () {
-        // After "Type your stuff here:" is typed, allow user interaction
-        const editableElement = document.getElementById('editable');
-        editableElement.focus();
-        editableElement.addEventListener('click', function () {
-            if (editableElement.textContent === 'Start typing...') {
-                editableElement.textContent = '';
-            }
-        });
+// // Start typing "Hello World."
+// typeWriter(document.getElementById('hello-world'), 'Hello World.', 0, function () {
+//     // After "Hello World." is typed out, start typing "Type your stuff here:"
+//     typeWriter(document.getElementById('prompt'), 'Type your stuff here:', 0, function () {
+//         // After "Type your stuff here:" is typed, allow user interaction
+//         const editableElement = document.getElementById('editable');
+//         editableElement.focus();
+//         editableElement.addEventListener('click', function () {
+//             if (editableElement.textContent === 'Start typing...') {
+//                 editableElement.textContent = '';
+//             }
+//         });
 
-        editableElement.addEventListener('blur', function () {
-            if (editableElement.textContent.trim() === '') {
-                editableElement.textContent = 'Start typing...';
-            }
-        });
-    });
-});
+//         editableElement.addEventListener('blur', function () {
+//             if (editableElement.textContent.trim() === '') {
+//                 editableElement.textContent = 'Start typing...';
+//             }
+//         });
+//     });
+// });
 
 
 
-// User interaction
-textElement.addEventListener('click', function () {
-    if (textElement.textContent === originalText) {
-        // If the current text is "Hello World.", start deleting
-        deleting = true;
-        typeWriter(originalText, originalText.length, function () {
-            textElement.focus(); // Focus at the end to allow user input
-            deleting = false; // Reset for next round
-        });
-    }
-});
+// // User interaction
+// textElement.addEventListener('click', function () {
+//     if (textElement.textContent === originalText) {
+//         // If the current text is "Hello World.", start deleting
+//         deleting = true;
+//         typeWriter(originalText, originalText.length, function () {
+//             textElement.focus(); // Focus at the end to allow user input
+//             deleting = false; // Reset for next round
+//         });
+//     }
+// });
 
 
 // start the text animation
