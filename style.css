@@ -34,3 +34,32 @@ body, html {
     50% { border-color: black }
   }
   
+
+  #container {
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Maximum width of the typewriter area */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  #text, #prompt, #editable {
+    display: block; /* Elements are block-level, allowing for line breaks */
+    width: 100%; /* Full width of the container */
+    margin-bottom: 0.5em; /* Spacing between elements */
+
+  }
+  
+  #editable {
+    min-height: 50px; /* Minimum height to start with */
+    border:none; /* Border styling */
+    padding: none; /* Padding inside the editable area */
+    white-space: pre-wrap; /* Allows text to wrap and preserves whitespace */
+    word-wrap: break-word; /* Ensures long words do not overflow */
+    cursor: text; /* Shows a text cursor */
+    
+  }
+  
+  #editable:focus {
+    outline: none; /* Removes the default focus outline */
+    border-color: #aaa; /* Border color when the element is focused */
+  }
+  
