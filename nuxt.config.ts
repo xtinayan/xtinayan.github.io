@@ -7,8 +7,8 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'icon', type: 'image/png', href: '/me.png' }],
-    }
-  }
+    },
+  },
     router: {
     base: '/xtinayan.github.io/'
   },
