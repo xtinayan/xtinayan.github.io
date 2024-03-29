@@ -6,12 +6,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/me.ico' }],
+        { rel: 'icon', type: 'image/png', href: '/me.png' , sizes:'32x32'}],
     },
   },
-    router: {
+  router: {
     base: '/xtinayan.github.io/'
   },
+  pwa: { icon: { source: '~/static/me.png' }, },
   alias: {
     '@': resolve(__dirname, "/"),
   },
