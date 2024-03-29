@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  #typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2s steps(10, end),
+      /* cursor .4s step-end infinite alternate, */
+      blink-caret .75s step-end infinite alternate;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+  
+
+  #container {
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Maximum width of the typewriter area */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  #text, #prompt, #editable {
+    display: block; /* Elements are block-level, allowing for line breaks */
+    width: 100%; /* Full width of the container */
+    margin-bottom: 0.5em; /* Spacing between elements */
+
+  }
+  
+  #editable {
+    min-height: 50px; /* Minimum height to start with */
+    border:none; /* Border styling */
+    padding: none; /* Padding inside the editable area */
+    white-space: pre-wrap; /* Allows text to wrap and preserves whitespace */
+    word-wrap: break-word; /* Ensures long words do not overflow */
+    cursor: text; /* Shows a text cursor */
+    
+  }
+  
+  #editable:focus {
+    outline: none; /* Removes the default focus outline */
+    border-color: #aaa; /* Border color when the element is focused */
+  }
+  
