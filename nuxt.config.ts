@@ -18,5 +18,6 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  modules: ["@nuxt/content"]
+  modules: ["@nuxt/content"],
+  components: true
 })
