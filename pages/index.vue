@@ -1,15 +1,15 @@
 <template>
     <div id="typewriter">
       <!-- <NuxtWelcome /> -->
-      <!-- <section id = "home" class = "section"> -->
+      <section id = "home" class = "section">
       Hello World!
-      <!-- </section> -->
+      </section>
 
 
       <!-- About Section -->
-    <!-- <section id="about" class="section">
+     <section id="about" class="section"> 
       <h2>About Us</h2>
       <p>This is the about section where you can introduce your project or yourself.</p>
-    </section> -->
+    </section> 
     </div>
-  </template>
+</template>
