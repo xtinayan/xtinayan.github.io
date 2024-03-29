@@ -1,4 +1,7 @@
 <template> 
+  <head>
+    <title>Chrissy's Space :)</title>
+  </head>
   <div> 
       <NuxtLayout>
         <header> 
