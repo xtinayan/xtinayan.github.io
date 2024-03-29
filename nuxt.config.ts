@@ -1,23 +1,27 @@
-import {resolve} from 'path';
+import { resolve } from 'path';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   target: 'static',
 
-  link: [
-    { rel: 'icon', type: 'image/png', href: '/me.png' }],
-  router: {
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/me.png' }],
+    }
+  }
+    router: {
     base: '/xtinayan.github.io/'
   },
-  alias:{
-    '@':resolve(__dirname, "/"),
+  alias: {
+    '@': resolve(__dirname, "/"),
   },
-  css:[
+  css: [
     "~/assets/main.scss"
   ],
-  postcss:{
-    plugins:{
-      tailwindcss:{},
-      autoprefixer:{},
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
   devtools: { enabled: true },
