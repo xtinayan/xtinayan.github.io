@@ -2,13 +2,16 @@
   <div> 
       <NuxtLayout>
         <header> 
+          <nav> 
           <ul>
             <li>
               <NuxtLink id = "navi" to="/">Home</NuxtLink> |
+              <a href="#about">About</a> |
               <NuxtLink id = "navi" to="/events">Events</NuxtLink>
             </li>
           </ul>
-        </header>
+        </nav>
+      </header>
           <!-- that it uses the router -->
           <NuxtPage />
       </NuxtLayout>
