@@ -1,7 +1,8 @@
 <template> 
     <div> 
-        Coming soon... <br>
+        <h2>coming soon...</h2>
         <br>
-        Stay tuned :)
+        <p>stay tune :)</p>
+    
     </div>
 </template>

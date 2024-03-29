@@ -6,12 +6,12 @@
 body,
 html {
   height: 100%;
-  width: 90%;
+  padding-top:20vh;
+  width: 80%;
   margin: 0 auto;
-  padding: 0 5%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   background-color: #fff;
   font-family: 'Courier New', Courier, monospace;
   scroll-behavior: smooth;
@@ -21,6 +21,8 @@ h1{
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 0.5ch;
+  justify-content: center;
+  align-items: center;
 }
 
 h2{
@@ -127,6 +129,7 @@ header {
   display: flex;
   justify-content: flex-end; // Aligns children (ul in this case) to the end (right)
   padding: 10px 20px; // Adjust padding as needed
+  z-index: 1000; // Ensure the header is above other content
 
   ul {
     display: flex;
@@ -146,6 +149,7 @@ header {
         &:hover {
           text-decoration: underline; // Example hover effect
         }
+
       }
     }
   }

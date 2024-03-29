@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: 'icon', type: 'image/png', href: '/me.png' , sizes:'32x32'}],
+        { rel: 'icon', type: 'image/png', href: '/me.png', sizes: '32x32' }],
     },
   },
   router: {
@@ -26,6 +26,7 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content",
+    "nuxt-aos"],
   components: true
 })
