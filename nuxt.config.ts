@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   target: 'static',
 
   link: [
-    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    { rel: 'icon', type: 'image/x-icon', href: '/me.png' }],
   router: {
     base: '/xtinayan.github.io/'
   },
