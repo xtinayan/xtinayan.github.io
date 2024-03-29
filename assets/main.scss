@@ -17,6 +17,18 @@ html {
   scroll-behavior: smooth;
 }
 
+h1{
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.5ch;
+}
+
+h2{
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.2ch;
+}
+
 #typewriter {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
@@ -27,9 +39,9 @@ html {
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em;
-  /* Adjust as needed */
+
   animation:
-    typing 2s steps(10, end),
+    typing 2s steps(12, end),
     /* cursor .4s step-end infinite alternate, */
     blink-caret .75s step-end infinite alternate;
 }

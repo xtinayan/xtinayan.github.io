@@ -1,9 +1,9 @@
 <template>
     <div id="typewriter">
       <!-- <NuxtWelcome /> -->
-      <section id = "home" class = "section">
-      Hello World!
-      </section>
+      <!-- <section id = "home" class = "section"> -->
+      <h1>Hello World!</h1>
+      <!-- </section> -->
 
 
       <!-- About Section -->
