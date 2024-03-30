@@ -48,7 +48,7 @@ export default {
         // Set a timer to automatically close the menu after 3 seconds
         this.closeTimer = setTimeout(() => {
           this.menuOpen = false;
-        }, 3000);
+        }, 4000);
       } else {
         // If the menu is manually closed, clear any existing timer
         clearTimeout(this.closeTimer);
