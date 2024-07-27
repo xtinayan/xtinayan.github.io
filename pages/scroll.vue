@@ -1,8 +1,6 @@
 <template>
   <div>
     <page id="link">
-      SCROLLING lalalala
-
       <body>
         What is Lorem Ipsum? <br />
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
