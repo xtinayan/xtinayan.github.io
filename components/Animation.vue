@@ -1,11 +1,22 @@
 <template>
-  <div class="flex justify-center items-center w-full h-full">
-    <img
-      :src="currentImage"
-      alt="Stop motion"
-      class="w-0.75 max-w-md h-auto object-contain mx-auto rounded-lg cursor-pointer"
-      @click="handleClick"
-    />
+  <div class="flex justify-center items-center w-full h-full min-h-[300px]">
+    <transition name="fade" mode="out-in">
+      <template v-if="!showText">
+        <img
+          :key="'image'"
+          :src="currentImage"
+          alt="Stop motion"
+          class="w-full max-w-md h-auto object-contain mx-auto rounded-lg cursor-pointer"
+          @click="handleClick"
+        />
+      </template>
+      <template v-else>
+        <div :key="'text'" class="text-center px-4">
+          <h2 class="text-xl font-semibold mb-2">welcome to chrissy's corner :)</h2>
+          <p class="text-base">(still don't know what else to write)</p>
+        </div>
+      </template>
+    </transition>
   </div>
 </template>
 
@@ -23,11 +34,7 @@ const props = defineProps({
   },
   finalImageIndex: {
     type: Number,
-    default: null, // If null, just end on the last image
-  },
-  link: {
-    type: String,
-    default: null, // Optional link on final image
+    default: null,
   },
 });
 
@@ -35,6 +42,7 @@ const emit = defineEmits(["finished"]);
 
 const currentImage = ref(props.images[0] || "");
 const index = ref(0);
+const showText = ref(false);
 let intervalId = null;
 let finished = false;
 
@@ -54,8 +62,8 @@ const switchImage = () => {
 };
 
 const handleClick = () => {
-  if (finished && props.link) {
-    window.open(props.link, "_blank");
+  if (finished) {
+    showText.value = true;
   }
 };
 
@@ -71,7 +79,13 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-img {
-  transition: none;
+/* Fade transition styles */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.6s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

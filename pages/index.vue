@@ -23,7 +23,6 @@ const frames = Object.values(modules);
     <Animation
       :images="frames"
       :interval="600"
-      link="https://xtinayan.substack.com"
       @finished="console.log('Animation done!')"
     />
   </div>
