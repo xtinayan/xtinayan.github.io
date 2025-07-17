@@ -14,13 +14,10 @@ const frames = Object.values(modules);
 </script>
 
 <template>
-  <div id="typewriter">
-    <!-- <NuxtWelcome /> -->
-    <!-- <section id = "home" class = "section"> -->
-    <h1>Hello World :)</h1>
-    <!-- </section> -->
-    <!-- About Section -->
-  </div>
+  <!-- <div class="max-w-full"> -->
+  <!-- <section id = "home" class = "section"> -->
+  <!-- <h1>Hello World :)</h1> -->
+  <!-- </div> -->
 
   <div class="pt-20">
     <Animation
