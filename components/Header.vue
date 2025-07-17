@@ -12,7 +12,8 @@
               <li>
                 <NuxtLink to="/">Home</NuxtLink> |
                 <NuxtLink to="/about">About</NuxtLink> |
-                <NuxtLink to="/journals">Journals</NuxtLink> |
+                <NuxtLink to="/journal">Journal</NuxtLink> |
+                <NuxtLink to="/gallery">Gallery</NuxtLink> |
               </li>
             </ul>
           </div>

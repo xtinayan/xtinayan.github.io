@@ -32,8 +32,8 @@
       <NuxtLink to="/" class="px-4 py-2 bg-gray-50 rounded hover:bg-gray-100"
         >Home</NuxtLink
       >
-      <NuxtLink to="/journals" class="px-4 py-2 bg-gray-50 rounded hover:bg-gray-100"
-        >Journals</NuxtLink
+      <NuxtLink to="/journal" class="px-4 py-2 bg-gray-50 rounded hover:bg-gray-100"
+        >Journal</NuxtLink
       >
       <NuxtLink to="/gallery" class="px-4 py-2 bg-gray-50 rounded hover:bg-gray-100"
         >Gallery</NuxtLink
