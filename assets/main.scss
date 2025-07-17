@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body,
+html {
+  height: 100%;
+  padding-top:5vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  background-color: #F1E9D2;
+  font-family: 'Courier New', Courier, monospace;
+  scroll-behavior: smooth;
+}
+
+h1{
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.5ch;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.2ch;
+}
+
+#typewriter {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+
+  animation:
+    typing 2s steps(12, end),
+    /* cursor .4s step-end infinite alternate, */
+    blink-caret .75s step-end infinite alternate;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: black
+  }
+}
+
+
+#container {
+  width: 100%;
+  /* Full width of the container */
+  max-width: 600px;
+  /* Maximum width of the typewriter area */
+  margin: 0 auto;
+  /* Center the container */
+}
+
+#text,
+#prompt,
+#editable {
+  display: block;
+  /* Elements are block-level, allowing for line breaks */
+  width: 100%;
+  /* Full width of the container */
+  margin-bottom: 0.5em;
+  /* Spacing between elements */
+
+}
+
+#editable {
+  min-height: 50px;
+  /* Minimum height to start with */
+  border: none;
+  /* Border styling */
+  padding: none;
+  /* Padding inside the editable area */
+  white-space: pre-wrap;
+  /* Allows text to wrap and preserves whitespace */
+  word-wrap: break-word;
+  /* Ensures long words do not overflow */
+  cursor: text;
+  /* Shows a text cursor */
+
+}
+
+#editable:focus {
+  outline: none;
+  /* Removes the default focus outline */
+  border-color: #aaa;
+  /* Border color when the element is focused */
+}
+
+
+// If you are including the SCSS in your Vue component, ensure you have the <style lang="scss"> tag
+
+header {
+  position:fixed;
+  top:5%;
+  right:5%;
+  display: flex;
+  justify-content: flex-end; // Aligns children (ul in this case) to the end (right)
+  padding: 10px 20px; // Adjust padding as needed
+  z-index: 1000; // Ensure the header is above other content
+
+  ul {
+    display: flex;
+    list-style: none; // Removes bullet points
+    padding: 0; // Removes default padding
+
+    li {
+      &:not(:last-child) {
+        margin-right: 20px; // Adds spacing between list items, adjust as needed
+      }
+
+      // Styling for NuxtLink, targeting them as a tags
+      a {
+        text-decoration: none; // Removes underline from links
+        color: #000; // Set the color of your links
+
+        &:hover {
+          text-decoration: underline; // Example hover effect
+        }
+
+      }
+    }
+  }
+}
