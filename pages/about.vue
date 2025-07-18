@@ -1,5 +1,7 @@
 <template>
-  <div class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+  <div
+    class="min-h-full flex flex-col justify-center items-center text-center max-h-full"
+  >
     <!-- Avatar -->
     <img
       src="public/favicon.png"
@@ -13,7 +15,7 @@
     <p class="text-md text-gray-600 mb-4">you can also find me here:</p>
 
     <!-- Social Icons -->
-    <div class="flex space-x-4 text-2xl mb-6 mt-5vh">
+    <div class="flex space-x-4 text-2xl mb-6 mt-[5vh]">
       <a href="https://instagram.com/xtinayan" target="_blank"
         ><i class="fab fa-instagram"></i
       ></a>
@@ -28,7 +30,7 @@
     </div>
 
     <!-- Navigation Buttons -->
-    <div class="flex space-x-4 mb-10">
+    <div class="flex space-x-4 mb-4">
       <NuxtLink to="/" class="px-4 py-2 bg-gray-50 rounded hover:bg-gray-100"
         >Home</NuxtLink
       >
@@ -41,6 +43,6 @@
     </div>
 
     <!-- Footer -->
-    <footer class="text-xs text-gray-500"></footer>
+    <!-- <footer class="text-xs text-gray-500"></footer> -->
   </div>
 </template>

@@ -3,6 +3,7 @@
     <img
       :src="src"
       alt="Gallery image"
+      loading="lazy"
       class="cursor-pointer rounded-md object-cover w-full h-full"
       @click="open = true"
     />

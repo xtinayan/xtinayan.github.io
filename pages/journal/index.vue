@@ -7,7 +7,7 @@
     <p>(warning: i'm not the best at writing updates)</p>
 
     <img
-      src="public/bowerhouse.png"
+      src="/images/bowerhouse.webp"
       alt="Journal Image"
       class="my-4 max-h-[50vh] rounded-md"
     />
