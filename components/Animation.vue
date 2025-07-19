@@ -18,8 +18,8 @@
           <h2 class="text-xl font-semibold mb-5">click to see the animation again:)</h2>
           <p class="text-xl font-semibold mb-2">or explore the page ↓</p>
           <div class="flex justify-center space-x-4 text-sm">
-            <NuxtLink to="/" class="px-3 py-1 bg-gray-100 rounded hover:bg-gray-200">
-              Home
+            <NuxtLink to="/about" class="px-3 py-1 bg-gray-100 rounded hover:bg-gray-200">
+              About
             </NuxtLink>
             <NuxtLink
               to="/journal"
