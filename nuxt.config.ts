@@ -3,6 +3,14 @@ import { resolve } from 'path';
 export default defineNuxtConfig({
   target: 'static',
 
+  runtimeConfig: {
+    public: {
+      supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL ?? '',
+      supabaseAnonKey: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY ?? '',
+      journalPassword: process.env.NUXT_PUBLIC_JOURNAL_PASSWORD ?? '',
+    },
+  },
+
   app: {
     head: {
       link: [
@@ -26,6 +34,6 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxtjs/mdc", "@nuxt/image"],
   components: true
 })
