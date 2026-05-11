@@ -60,6 +60,8 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({ ssr: false })
+
 const supabase = useSupabase()
 
 const form = reactive({ name: '', email: '', message: '' })
@@ -72,6 +74,11 @@ async function handleSubmit() {
 
   if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
     error.value = 'Please fill in all fields.'
+    return
+  }
+
+  if (!supabase) {
+    error.value = 'Something went wrong. Please try again.'
     return
   }
 
