@@ -15,7 +15,11 @@ export default defineNuxtConfig({
     head: {
       title: "Chrissy's Space :)",
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' }],
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Courier+Prime:wght@400;700&family=DM+Sans:wght@400;500&display=swap' },
+      ],
       meta: [
         { name: 'description', content: "Welcome to Chrissy's cozy corner on the internet!" },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
