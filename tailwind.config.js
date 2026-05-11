@@ -11,6 +11,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        cream: '#FAF8F5',
+        charcoal: '#2D2D2D',
+        rose: '#E8A5A5',
+        blue: '#A5B8E8',
+        warm: '#C9B99A',
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'serif'],
+        mono: ['"Courier New"', 'Courier', 'monospace'],
+      },
       typography: {
         DEFAULT: {
           css: {

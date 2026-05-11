@@ -3,32 +3,34 @@
 @tailwind utilities;
 
 
-body,
 html {
   height: 100%;
-  padding-top:5vh;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: top;
-  background-color: #F1E9D2;
-  font-family: 'Courier New', Courier, monospace;
   scroll-behavior: smooth;
 }
 
-h1{
-  font-size: clamp(1.25rem, 5vw, 2rem); // Responsive size
-  font-weight: bold;
-  letter-spacing: 0.5ch;
-  justify-content: center;
-  align-items: center;
+body {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #FAF8F5;
+  color: #2D2D2D;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-h2{
-  font-size: 1.5em;
-  font-weight: bold;
-  letter-spacing: 0.2ch;
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 300;
+  letter-spacing: 0.05ch;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 300;
+  letter-spacing: 0.02ch;
 }
 
 #typewriter {
