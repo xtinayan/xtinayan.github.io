@@ -45,6 +45,12 @@ export default defineNuxtConfig({
     },
   },
 
+  routeRules: {
+    '/journal': { ssr: false },
+    '/journal/**': { ssr: false },
+    '/journal-unlock': { ssr: false },
+  },
+
   vite: {
     optimizeDeps: {
       include: ['debug']
