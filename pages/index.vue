@@ -427,8 +427,8 @@
   }
 
   .about-section .section-img {
-    max-height: 250px;
-    object-fit: cover;
+    max-height: none;
+    object-fit: contain;
     margin-top: 1.5rem;
   }
 

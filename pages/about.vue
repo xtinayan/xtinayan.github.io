@@ -507,26 +507,40 @@ onMounted(() => {
 }
 
 /* ── MOBILE ─────────────────────────────── */
-@media (max-width: 860px) {
+@media (max-width: 767px) {
+  /* page shell */
   .about-page {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding-top: 4rem;
+    gap: 0;
+    padding: 4rem 0 6rem;
   }
 
+  /* left col: un-stick, center children, add divider below */
   .left-col {
     position: static;
     flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(201, 185, 154, 0.18);
+    margin-bottom: 2rem;
   }
 
+  /* smaller avatar */
+  .avatar-wrap {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* pill tabs */
   .anchor-nav {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
-    gap: 0;
-    padding-bottom: 0.25rem;
     scrollbar-width: none;
+    gap: 0.5rem;
+    width: 100%;
+    padding-bottom: 0;
   }
 
   .anchor-nav::-webkit-scrollbar {
@@ -535,16 +549,90 @@ onMounted(() => {
 
   .anchor-nav a {
     flex-shrink: 0;
-    border-left: none;
-    border-bottom: 2px solid transparent;
-    padding: 0.35rem 0.75rem;
+    background: #faf8f5;
+    border: 1px solid rgba(232, 165, 165, 0.45);
+    border-left: 1px solid rgba(232, 165, 165, 0.45);
+    border-radius: 999px;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.72rem;
     white-space: nowrap;
+    color: #aaa;
   }
 
   .anchor-nav a:hover,
   .anchor-nav a.active {
-    border-left-color: transparent;
-    border-bottom-color: #e8a5a5;
+    background: rgba(232, 165, 165, 0.1);
+    border-color: #e8a5a5;
+    border-left-color: #e8a5a5;
+    color: #e8a5a5;
+  }
+
+  /* center social icons */
+  .left-socials {
+    justify-content: center;
+  }
+
+  /* right col: reduced section spacing */
+  .content-section {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+    margin-bottom: 1.25rem;
+  }
+
+  /* body text: full width */
+  .body-text {
+    max-width: 100%;
+  }
+
+  /* timeline: dot+line on left, year above title */
+  .timeline::before {
+    left: 8px;
+  }
+
+  .tl-row {
+    grid-template-columns: 18px 1fr;
+    grid-template-areas:
+      "dot year"
+      ".   content";
+    column-gap: 1rem;
+    row-gap: 0.25rem;
+    padding-bottom: 2rem;
+    align-items: start;
+  }
+
+  .tl-year {
+    grid-area: year;
+    text-align: left;
+    padding-top: 0.1rem;
+  }
+
+  .tl-dot {
+    grid-area: dot;
+    margin-top: 0.25rem;
+    justify-self: center;
+  }
+
+  .tl-content {
+    grid-area: content;
+  }
+
+  .tl-continued {
+    padding-left: calc(18px + 1rem);
+  }
+
+  /* find me: 2-column grid */
+  .find-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .find-link {
+    justify-content: center;
   }
 }
 </style>
