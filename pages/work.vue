@@ -10,6 +10,7 @@
         <nav class="side-nav">
           <a href="#experience">experience</a>
           <a href="#projects">projects</a>
+          <a href="#skills">skills</a>
         </nav>
       </aside>
 
@@ -179,6 +180,76 @@
                 </div>
                 <span class="card-arrow">→</span>
               </NuxtLink>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        <!-- ── SKILLS ───────────────────────────── -->
+        <section id="skills" class="work-section">
+          <ScrollReveal animation="fade-up" :delay="0.05">
+            <div class="skills-intro">
+              <p class="section-label">skills</p>
+              <p class="skills-subtitle">Technologies and tools I've worked with.</p>
+            </div>
+          </ScrollReveal>
+
+          <div class="skills-grid">
+            <ScrollReveal animation="fade-up" :delay="0.1">
+              <div class="skill-group">
+                <p class="group-label">Languages & Databases</p>
+                <div class="skill-pills">
+                  <span class="skill-tag">Java</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">PHP</span>
+                  <span class="skill-tag">SQL</span>
+                  <span class="skill-tag">MongoDB</span>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal animation="fade-up" :delay="0.15">
+              <div class="skill-group">
+                <p class="group-label">Web & Frameworks</p>
+                <div class="skill-pills">
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">Express</span>
+                  <span class="skill-tag">Twig</span>
+                  <span class="skill-tag">HTML/CSS</span>
+                  <span class="skill-tag">REST APIs</span>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal animation="fade-up" :delay="0.2">
+              <div class="skill-group">
+                <p class="group-label">Data & ML</p>
+                <div class="skill-pills">
+                  <span class="skill-tag">NLP</span>
+                  <span class="skill-tag">Anomaly Detection</span>
+                  <span class="skill-tag">Keyword Extraction</span>
+                  <span class="skill-tag">Scikit-learn</span>
+                  <span class="skill-tag">Pandas</span>
+                  <span class="skill-tag">NumPy</span>
+                  <span class="skill-tag">Transformer Models</span>
+                  <span class="skill-tag">SentenceTransformers (SBERT)</span>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal animation="fade-up" :delay="0.25">
+              <div class="skill-group">
+                <p class="group-label">Tools & Methodologies</p>
+                <div class="skill-pills">
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">MVC</span>
+                  <span class="skill-tag">Agile</span>
+                  <span class="skill-tag">Scrum</span>
+                </div>
+              </div>
             </ScrollReveal>
           </div>
         </section>
@@ -393,7 +464,7 @@
   color: #c9b99a;
 
   white-space: nowrap;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 
 /* ── DESCRIPTION LIST ────────────────── */
@@ -521,6 +592,57 @@
   white-space: nowrap;
 }
 
+/* ── SKILLS ──────────────────────────── */
+
+.skills-intro .section-label {
+  margin-bottom: 0.4rem;
+}
+
+.skills-subtitle {
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(0.85rem, 1vw, 0.95rem);
+  color: #aaa;
+  margin: 0 0 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.group-label {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #c9b99a;
+  margin: 0;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.skill-tag {
+  background: rgba(165, 184, 232, 0.18);
+  color: #2d2d2d;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+}
+
 /* ── MOBILE ──────────────────────────── */
 
 @media (max-width: 900px) {
@@ -546,6 +668,18 @@
   .project-header {
     flex-direction: column;
     gap: 0.4rem;
+  }
+
+  .meta-right {
+    align-items: flex-start;
+  }
+
+  .timeline {
+    margin-left: 6px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>

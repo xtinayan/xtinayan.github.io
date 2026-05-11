@@ -534,6 +534,8 @@ onMounted(() => {
 
   /* pill tabs */
   .anchor-nav {
+    display: none;
+
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -570,6 +572,13 @@ onMounted(() => {
   /* center social icons */
   .left-socials {
     justify-content: center;
+  }
+
+  /* both grid items: prevent min-width: auto from expanding the 1fr column beyond body width */
+  .left-col,
+  .right-col {
+    min-width: 0;
+    width: 100%;
   }
 
   /* right col: reduced section spacing */

@@ -303,6 +303,7 @@
 .period {
   font-family: "Courier New", Courier, monospace;
   font-size: clamp(0.68rem, 0.8vw, 0.78rem);
+  font-weight: 600;
   color: #c9b99a;
   white-space: nowrap;
 }
@@ -328,6 +329,8 @@
   font-family: "Courier New", Courier, monospace;
   font-size: clamp(0.65rem, 0.75vw, 0.72rem);
   color: #c9b99a;
+  font-weight: 600;
+  font-style: italic;
   white-space: nowrap;
 }
 
@@ -415,6 +418,10 @@
 
   .meta-right {
     align-items: flex-start;
+  }
+
+  .timeline {
+    margin-left: 6px;
   }
 }
 </style>
