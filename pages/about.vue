@@ -112,7 +112,10 @@
             <div class="tl-row">
               <span class="tl-year">{{ event.year }}</span>
               <div class="tl-dot" />
-              <p class="tl-text">{{ event.text }}</p>
+              <div class="tl-content">
+                <p class="tl-title">{{ event.title }}</p>
+                <p v-if="event.text" class="tl-text">{{ event.text }}</p>
+              </div>
             </div>
           </ScrollReveal>
           <ScrollReveal animation="fade-up" :delay="timelineEvents.length * 0.06">
@@ -175,19 +178,42 @@
 
 <script setup lang="ts">
 const timelineEvents = [
-  { year: "2001", text: "Born in China" },
-  { year: "2017", text: "Moved to Germany, started learning the language" },
-  { year: "2020", text: "Graduated Abitur with 1.0" },
+  { year: "2001", title: "Born in China 🇨🇳" },
   {
-    year: "2020",
-    text: "Started B.Sc. Information Systems at TUM, Munich — Deutschlandstipendium",
+    year: "2010",
+    title: "5 month study abroad in California 🇺🇸",
   },
-  { year: "2023", text: "Graduated 1st of 260 students, GPA 1.2" },
-  { year: "2023", text: "Co-authored KONVENS 2024 NLP publication" },
-  { year: "2024", text: "Started M.Sc. at TUM + Deutschlandstipendium by Allianz" },
-  { year: "2024", text: "ML Engineer intern at SAP SE" },
-  { year: "2024", text: "Moved to London ✈️" },
-  { year: "2024", text: "Full-Time Training Program, Amana Trust" },
+  {
+    year: "March 2017",
+    title: "Moved to Germany 🇩🇪 with family",
+    text: "From 0 German to fluency in 6 months, managed to skip a grade after a year",
+  },
+  {
+    year: "June 2020",
+    title: "Graduated Abitur with 1.0",
+    text: "Recognized as one of the best graduates in the state",
+  },
+  {
+    year: "October 2020",
+    title: "Started B.Sc. Wirtschaftsinformatik at TUM wtih Deutschlandstipendium",
+  },
+  { year: "October 2023", title: "Graduated 1st of 260 students, final grade 1.2" },
+  { year: "2024", title: "Co-authored KONVENS 2024 NLP publication" },
+  {
+    year: "2024",
+    title: "Dual Study M.Sc. Information Systems, SAP + TUM",
+  },
+  {
+    year: "March 2024",
+    text: "As part of the SAP Vocational Training STAR program",
+    title: "ML Engineer at SAP SE",
+  },
+  {
+    year: "August 2024",
+    title: "Moved to London 🇬🇧",
+    text:
+      "Started the Full-Time Training Program (FTTL) by Amana Trust, a registered Christian charity ",
+  },
 ];
 
 const active = ref("about");
@@ -227,7 +253,7 @@ onMounted(() => {
 /* ── LEFT COLUMN ────────────────────────── */
 .left-col {
   position: sticky;
-  top: 3rem;
+  top: 5rem;
   display: flex;
   flex-direction: column;
   gap: 2.25rem;
@@ -418,11 +444,25 @@ onMounted(() => {
   z-index: 1;
 }
 
-.tl-text {
+.tl-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.tl-title {
   font-family: "Courier New", Courier, monospace;
   font-size: clamp(0.88rem, 1vw, 0.98rem);
-  line-height: 1.65;
-  color: #555;
+  font-weight: 700; /* bold title */
+  color: #2d2d2d;
+  margin: 0;
+}
+
+.tl-text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(0.85rem, 1vw, 0.95rem);
+  line-height: 1.6;
+  color: #777;
   margin: 0;
 }
 

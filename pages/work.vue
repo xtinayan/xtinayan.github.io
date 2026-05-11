@@ -190,7 +190,7 @@
 <style scoped>
 .work-page {
   width: 100%;
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 
 .page-title {
@@ -213,8 +213,7 @@
 
 .left-column {
   position: sticky;
-  top: 2.5rem;
-
+  top: 5rem;
   align-self: start;
   height: fit-content;
 }
@@ -257,7 +256,6 @@
 
 .work-content {
   max-width: 850px;
-  margin-top: 2.5rem;
 }
 
 /* ── SECTIONS ─────────────────────────── */

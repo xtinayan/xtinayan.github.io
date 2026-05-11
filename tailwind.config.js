@@ -21,6 +21,7 @@ module.exports = {
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'serif'],
         mono: ['"Courier New"', 'Courier', 'monospace'],
+        display: ['"Special Elite"', 'cursive'],
       },
       typography: {
         DEFAULT: {

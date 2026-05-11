@@ -10,7 +10,8 @@
         <span class="label">TUM · SAP · Amana Trust</span>
         <h1 class="hero-heading">hi, i'm christina :)</h1>
         <p class="hero-sub">
-          I build things with code, think in data, and occasionally write about life.
+          I build things with code, think in data, and occasionally draw & write about
+          life.
         </p>
         <div class="socials">
           <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -34,12 +35,15 @@
         </p>
       </ScrollReveal>
       <ScrollReveal animation="slide-right" class="col">
-        <img src="/images/bench.png" class="section-img" alt="sitting on a bench" />
+        <img src="/images/laptop.png" class="section-img" alt="sitting on a bench" />
       </ScrollReveal>
     </section>
 
     <!-- ── SECTION 3: WHAT I DO ─────────────────────────────── -->
     <section class="cards-section">
+      <ScrollReveal animation="fade-up">
+        <h2 class="cards-heading">what i do</h2>
+      </ScrollReveal>
       <div class="cards-grid">
         <ScrollReveal animation="fade-up" :delay="0">
           <div class="card">
@@ -69,7 +73,7 @@
       </ScrollReveal>
       <div class="highlights-body">
         <ScrollReveal animation="slide-left" class="col">
-          <img src="/images/laptop.png" class="section-img" alt="working on laptop" />
+          <img src="/images/train.png" class="section-img" alt="working in a train" />
         </ScrollReveal>
         <ScrollReveal animation="slide-right" class="col">
           <ul class="highlights-list">
@@ -130,7 +134,6 @@
   transition: transform 0.35s ease;
   display: block;
 }
-
 
 .hero-right {
   flex: 1;
@@ -240,8 +243,13 @@
 /* ── CARDS ─── */
 .cards-section {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+}
+
+.cards-heading {
+  margin-bottom: 3rem;
 }
 
 .cards-grid {
@@ -359,5 +367,96 @@
   background: #c9b99a;
   color: #2d2d2d;
   transform: scale(1.06);
+}
+
+/* ── MOBILE (< 768px) ──────────────────────────────────── */
+@media (max-width: 767px) {
+  /* General: drop full-viewport-height requirement, use py-16 */
+  .hero,
+  .about-section,
+  .cards-section,
+  .highlights-section,
+  .connect-section {
+    min-height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  /* ── SECTION 1: HERO ── */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 5rem; /* clear fixed header */
+  }
+
+  .hero-img-wrap {
+    flex: 0 0 auto;
+    width: 200px;
+    max-width: 200px;
+  }
+
+  .hero-img {
+    max-height: none;
+  }
+
+  .hero-right {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-heading {
+    font-size: 2.25rem;
+  }
+
+  .hero-sub {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  /* ── SECTION 2: ABOUT SNAPSHOT ── */
+  .about-section {
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .about-section .section-img {
+    max-height: 250px;
+    object-fit: cover;
+    margin-top: 1.5rem;
+  }
+
+  /* ── SECTION 3: CARDS ── */
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1.25rem 1.1rem;
+  }
+
+  /* ── SECTION 4: HIGHLIGHTS ── */
+  .highlights-body {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* hide image, let text take full width */
+  .highlights-body > *:first-child {
+    display: none;
+  }
+
+  /* ── SECTION 5: CONNECT ── */
+  .talk-btn {
+    width: 130px;
+    height: 130px;
+    font-size: 1.2rem;
+  }
 }
 </style>
