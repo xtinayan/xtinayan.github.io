@@ -98,6 +98,7 @@
 /* ── PAGE ─── */
 .page {
   width: 100%;
+  overflow-x: hidden;
 }
 
 /* ── SHARED: every section fills one viewport ─── */

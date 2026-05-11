@@ -3,9 +3,7 @@
     <div class="edu-layout">
       <!-- LEFT COLUMN -->
       <aside class="left-column">
-        <ScrollReveal animation="fade-up">
-          <h1 class="page-title">education</h1>
-        </ScrollReveal>
+        <h1 class="page-title">education</h1>
 
         <nav class="side-nav">
           <a href="#university">university</a>

@@ -19,7 +19,6 @@ html {
   font-size: 16px; /* prevents iOS auto-zoom on focused inputs */
   min-height: 100%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -29,7 +28,6 @@ body {
   background-color: #FAF8F5;
   color: #2D2D2D;
   font-family: 'Courier New', Courier, monospace;
-  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {

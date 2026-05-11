@@ -3,9 +3,9 @@
     <div class="work-layout">
       <!-- LEFT COLUMN -->
       <aside class="left-column">
-        <ScrollReveal animation="fade-up">
-          <h1 class="page-title">work</h1>
-        </ScrollReveal>
+        <!-- <ScrollReveal animation="fade-up"> -->
+        <h1 class="page-title">work</h1>
+        <!-- </ScrollReveal> -->
 
         <nav class="side-nav">
           <a href="#experience">experience</a>
