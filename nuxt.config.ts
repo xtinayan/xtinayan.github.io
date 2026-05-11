@@ -1,7 +1,6 @@
 import { resolve } from 'path';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
   target: 'static',
 
   runtimeConfig: {
@@ -23,18 +22,21 @@ export default defineNuxtConfig({
       ]
     },
   },
+
   router: {
     base: '/xtinayan.github.io/'
   },
+
   pwa: { icon: { source: '~/static/me.svg' }, },
+
   alias: {
     '@': resolve(__dirname, "/"),
   },
+
   css: [
     "~/assets/main.scss",
     '@fortawesome/fontawesome-free/css/all.min.css'
   ],
-
 
   postcss: {
     plugins: {
@@ -42,8 +44,15 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  vite: {
+    optimizeDeps: {
+      include: ['debug']
+    }
+  },
+
   devtools: { enabled: true },
   modules: ["@nuxt/content", "@nuxtjs/mdc", "@nuxt/image"],
-  components: true
+  components: true,
+  compatibilityDate: '2026-05-11',
 })
-

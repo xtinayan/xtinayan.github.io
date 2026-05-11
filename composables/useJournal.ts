@@ -1,7 +1,6 @@
 export interface JournalEntryPreview {
   id: number
   title: string
-  slug: string
   created_at: string
 }
 
@@ -23,7 +22,7 @@ export function useJournal() {
 
     const { data, error: err } = await supabase
       .from('journal_entries')
-      .select('id, title, slug, created_at')
+      .select('id, title, created_at')
       .order('created_at', { ascending: false })
 
     if (err) {
@@ -35,7 +34,7 @@ export function useJournal() {
     loading.value = false
   }
 
-  async function fetchEntry(slug: string) {
+  async function fetchEntry(id: number) {
     loading.value = true
     error.value = null
     entry.value = null
@@ -43,7 +42,7 @@ export function useJournal() {
     const { data, error: err } = await supabase
       .from('journal_entries')
       .select('*')
-      .eq('slug', slug)
+      .eq('id', id)
       .single()
 
     if (err) {
