@@ -258,6 +258,7 @@ onMounted(() => {
   flex-direction: column;
   gap: 2.25rem;
   align-self: start;
+  max-width: 30%;
 }
 
 .avatar-wrap {
