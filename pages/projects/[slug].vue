@@ -30,7 +30,14 @@
 
       <!-- Description -->
       <ScrollReveal animation="fade-up" :delay="0.1" class="description-section">
-        <p v-for="(para, i) in project.description" :key="i" class="body-text">{{ para }}</p>
+        <div
+          v-for="(section, i) in project.description"
+          :key="i"
+          class="description-group"
+        >
+          <h3 class="section-label">{{ section.label }}</h3>
+          <p class="body-text">{{ section.text }}</p>
+        </div>
       </ScrollReveal>
 
       <!-- Images (shown when added) -->
@@ -46,7 +53,11 @@
       </div>
 
       <!-- Links -->
-      <ScrollReveal v-if="project.links?.length" animation="fade-up" class="links-section">
+      <ScrollReveal
+        v-if="project.links?.length"
+        animation="fade-up"
+        class="links-section"
+      >
         <a
           v-for="link in project.links"
           :key="link.href"
@@ -63,26 +74,30 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute()
-const { getProject } = useProjects()
+const route = useRoute();
+const { getProject } = useProjects();
 
-const project = computed(() => getProject(route.params.slug as string))
+const project = computed(() => getProject(route.params.slug as string));
 
 useHead({
-  title: computed(() => project.value ? `${project.value.name} — Christina Yan` : 'Project'),
-})
+  title: computed(() =>
+    project.value ? `${project.value.name} — Christina Yan` : "Project"
+  ),
+});
 </script>
 
 <style scoped>
 .project-page {
-  width: 100%;
-  max-width: 720px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+  /* max-width: 80%; */
   padding: 5rem 0 6rem;
 }
 
 .back-link {
   display: inline-block;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 0.82rem;
   letter-spacing: 0.06em;
   color: #c9b99a;
@@ -108,7 +123,7 @@ useHead({
 }
 
 .project-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: clamp(2rem, 4.5vw, 3.2rem);
   font-weight: 300;
   color: #2d2d2d;
@@ -117,7 +132,7 @@ useHead({
 }
 
 .project-venue {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 0.8rem;
   color: #c9b99a;
   margin: 0;
@@ -125,12 +140,12 @@ useHead({
 }
 
 .project-summary {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: clamp(0.92rem, 1.1vw, 1.05rem);
   line-height: 1.85;
   color: #666;
   margin: 0.25rem 0 0;
-  max-width: 58ch;
+  /* max-width: 58ch; */
 }
 
 .divider {
@@ -143,15 +158,34 @@ useHead({
 .description-section {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  gap: 2.5rem; /* Increased gap between groups */
 }
 
+.description-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-label {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #c9b99a; /* Using your accent gold */
+  margin: 0;
+}
+
+/* Ensure body text stays consistent */
 .body-text {
-  font-family: 'Courier New', Courier, monospace;
   font-size: clamp(0.92rem, 1.1vw, 1.05rem);
   line-height: 1.9;
   color: #555;
   margin: 0;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .images-section {
@@ -176,7 +210,6 @@ useHead({
 }
 
 .ext-link {
-  font-family: 'Courier New', Courier, monospace;
   font-size: 0.82rem;
   letter-spacing: 0.06em;
   color: #2d2d2d;
@@ -193,7 +226,7 @@ useHead({
 
 /* shared */
 .period {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 0.75rem;
   color: #c9b99a;
   letter-spacing: 0.04em;
@@ -211,7 +244,7 @@ useHead({
   color: #7a90c8;
   border-radius: 999px;
   padding: 0.2rem 0.75rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 0.7rem;
   letter-spacing: 0.04em;
 }
@@ -222,7 +255,7 @@ useHead({
   border: 1px solid rgba(232, 165, 165, 0.35);
   border-radius: 999px;
   padding: 0.2rem 0.75rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 0.68rem;
   letter-spacing: 0.06em;
 }
@@ -232,7 +265,7 @@ useHead({
   flex-direction: column;
   gap: 1rem;
   padding-top: 6rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: #888;
 }
 </style>

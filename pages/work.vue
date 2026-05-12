@@ -102,7 +102,7 @@
           <div class="projects-grid">
             <!-- PROJECT -->
             <ScrollReveal animation="fade-up" :delay="0.1">
-              <NuxtLink to="/projects/attendance-management" class="project-card">
+              <NuxtLink to="/projects/ams" class="project-card">
                 <div class="project-header">
                   <h2 class="project-name">Attendance Management System</h2>
 

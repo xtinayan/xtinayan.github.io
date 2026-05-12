@@ -13,21 +13,24 @@
           I build things with code, think in data, and occasionally draw & write about
           life.
         </p>
-        <div class="socials">
+        <!-- <div class="socials">
           <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
           <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        </div>
+        </div> -->
       </ScrollReveal>
 
-      <div class="scroll-arrow">
+      <!-- <div class="scroll-arrow">
         <i class="fas fa-chevron-down bounce"></i>
-      </div>
+      </div> -->
+      <a href="#about" className="scroll-arrow">
+        <i className="fas fa-chevron-down bounce"></i>
+      </a>
     </section>
 
     <!-- ── SECTION 2: ABOUT SNAPSHOT ───────────────────────── -->
-    <section class="about-section">
+    <section id="about" class="about-section">
       <ScrollReveal animation="slide-left" class="col">
         <p class="body-text">
           machine learning, full-stack development, and the occasional artistic detour.
@@ -92,8 +95,16 @@
 
     <!-- ── SECTION 5: CONNECT ────────────────────────────────── -->
     <section class="connect-section">
-      <ScrollReveal animation="fade">
-        <NuxtLink to="/contact" class="talk-btn">let's talk</NuxtLink>
+      <ScrollReveal animation="fade-up" class="connect-inner">
+        <div class="scribble"></div>
+
+        <h2 class="connect-heading">thanks for stopping by :)</h2>
+
+        <p class="connect-text">
+          if anything resonated with you, feel free to reach out!
+        </p>
+
+        <NuxtLink to="/contact" class="talk-btn">get in touch :)</NuxtLink>
       </ScrollReveal>
     </section>
   </div>
@@ -348,9 +359,28 @@
   justify-content: center;
 }
 
+.connect-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.scribble {
+  width: 120px;
+  height: 18px;
+  margin: 0 auto 2rem;
+
+  background-image: url("https://cdn.prod.website-files.com/60c5f64abe141da7260da0b9/64f86ef26f224eb14c00563b_squiggle%20vertical.svg width='120' height='18' viewBox='0 0 120 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 10C18 2 35 16 52 8C69 0 84 14 102 7C109 4 114 5 118 8' stroke='%23d8a7a7' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .talk-btn {
   display: inline-flex;
   align-items: center;
+  margin-top: 1rem;
   justify-content: center;
   width: clamp(120px, 13vw, 160px);
   height: clamp(120px, 13vw, 160px);
