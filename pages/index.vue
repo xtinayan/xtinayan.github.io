@@ -30,10 +30,14 @@
     <section class="about-section">
       <ScrollReveal animation="slide-left" class="col">
         <p class="body-text">
-          Based in London. TUM graduate, 1st of 260. I work at the intersection of machine
-          learning, full-stack development, and the occasional creative detour.
+          machine learning, full-stack development, and the occasional artistic detour.
         </p>
-      </ScrollReveal>
+        <p class="body-text">
+          i grew up between 3 languages and ended up writing in ones computers understand
+          too.
+        </p></ScrollReveal
+      >
+
       <ScrollReveal animation="slide-right" class="col">
         <img src="/images/laptop.png" class="section-img" alt="sitting on a bench" />
       </ScrollReveal>
@@ -80,6 +84,7 @@
             <li>Graduated top of class — 1st of 260, TUM</li>
             <li>Co-authored KONVENS 2024 NLP publication</li>
             <li>ML Engineer at SAP SE</li>
+            <li>Fluent in 3 languages, getting there in a 4th</li>
           </ul>
         </ScrollReveal>
       </div>

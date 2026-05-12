@@ -62,12 +62,12 @@
           <p class="body-text">
             I'm Christina — born in China, raised in Germany, now based in London. I
             studied Information Systems at the Technical University of Munich, graduated
-            1st of 260 students, and have spent the years since building things with code,
-            thinking in data, and occasionally writing about life.
+            top of my class, and have spent the years since working on everything from ML
+            pipelines at SAP SE to full-stack web systems.
           </p>
           <p class="body-text">
-            Outside of work I play piano, crochet, keep a journal, and like the quiet
-            corners of the internet. This site is one of them.
+            Outside of work I play the piano, crochet, occasionally draw, and like the
+            quiet corners of the internet. This site is one of them.
           </p>
           <p class="body-text">
             I am fluent in Chinese 🇨🇳, English 🇺🇸, German 🇩🇪, and dabble in Spanish 🇪🇸.
@@ -244,7 +244,7 @@ onMounted(() => {
 .about-page {
   display: grid;
   grid-template-columns: 280px 1fr;
-  gap: 5rem;
+  gap: clamp(2rem, 3vw, 5rem);
   width: 100%;
   padding: 5rem 0 8rem;
   align-items: start;
@@ -339,7 +339,7 @@ onMounted(() => {
 }
 
 .section-heading {
-  font-family: "Cormorant Garamond", serif;
+  /* font-family: "Cormorant Garamond", serif; */
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-weight: 300;
   color: #2d2d2d;
