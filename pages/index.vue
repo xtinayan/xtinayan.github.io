@@ -7,7 +7,7 @@
       </div>
 
       <ScrollReveal animation="fade-up" class="hero-right">
-        <span class="label">TUM · SAP · Amana Trust</span>
+        <!-- <span class="label">TUM · SAP · Amana Trust</span> -->
         <h1 class="hero-heading">hi, i'm christina :)</h1>
         <p class="hero-sub">
           I build things with code, think in data, and occasionally draw & write about
@@ -153,13 +153,12 @@
   font-variant: small-caps;
   letter-spacing: 0.14em;
   color: #c9b99a;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .hero-heading {
-  font-family: "Cormorant Garamond", serif;
+  /* font-family: "Cormorant Garamond", serif; */
   font-size: clamp(2rem, 5.5vw, 4.2rem);
-  font-weight: 300;
+  font-weight: 500;
   color: #2d2d2d;
   line-height: 1.1;
   margin: 0;
@@ -168,7 +167,7 @@
 .hero-sub {
   font-family: "Courier New", Courier, monospace;
   font-size: clamp(0.95rem, 1.2vw, 1.2rem);
-  line-height: 1.9;
+  line-height: 1.8;
   color: #666;
   margin: 0;
   max-width: 44ch;
@@ -239,11 +238,11 @@
 
 /* ── BODY TEXT ─── */
 .body-text {
-  font-family: "Courier New", Courier, monospace;
   font-size: clamp(0.95rem, 1.2vw, 1.2rem);
-  line-height: 1.9;
+  line-height: 1.8;
   color: #555;
   margin: 0;
+  margin-bottom: 1.5rem;
 }
 
 /* ── CARDS ─── */
@@ -280,7 +279,6 @@
 }
 
 .card h3 {
-  font-family: "Cormorant Garamond", serif;
   font-size: clamp(1.1rem, 1.5vw, 1.45rem);
   font-weight: 600;
   color: #2d2d2d;
@@ -288,7 +286,6 @@
 }
 
 .card p {
-  font-family: "Courier New", Courier, monospace;
   font-size: clamp(0.88rem, 1vw, 1rem);
   color: #777;
   line-height: 1.65;
@@ -304,7 +301,7 @@
 }
 
 .section-heading {
-  font-family: "Cormorant Garamond", serif;
+  /* font-family: "Cormorant Garamond", serif; */
   font-size: clamp(1.6rem, 3vw, 2.5rem);
   font-weight: 300;
   color: #2d2d2d;
@@ -328,7 +325,6 @@
 }
 
 .highlights-list li {
-  font-family: "Courier New", Courier, monospace;
   font-size: clamp(0.95rem, 1.1vw, 1.1rem);
   color: #555;
   padding-left: 1.4rem;

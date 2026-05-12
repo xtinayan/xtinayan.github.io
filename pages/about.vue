@@ -244,7 +244,7 @@ onMounted(() => {
 .about-page {
   display: grid;
   grid-template-columns: 280px 1fr;
-  gap: clamp(2rem, 3vw, 5rem);
+  gap: clamp(2.5rem, 3.5vw, 5rem);
   width: 100%;
   padding: 5rem 0 8rem;
   align-items: start;
@@ -258,7 +258,6 @@ onMounted(() => {
   flex-direction: column;
   gap: 2.25rem;
   align-self: start;
-  max-width: 30%;
 }
 
 .avatar-wrap {
@@ -285,7 +284,6 @@ onMounted(() => {
 }
 
 .anchor-nav a {
-  font-family: "Courier New", Courier, monospace;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   color: #aaa;
@@ -340,7 +338,6 @@ onMounted(() => {
 }
 
 .section-heading {
-  /* font-family: "Cormorant Garamond", serif; */
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-weight: 300;
   color: #2d2d2d;
@@ -349,12 +346,12 @@ onMounted(() => {
 }
 
 .body-text {
-  /* font-family: "Courier New", Courier, monospace; */
   font-size: clamp(0.92rem, 1.1vw, 1.05rem);
   line-height: 1.95;
   color: #555;
   margin: 0 0 1.2rem;
-  max-width: 80%;
+  max-width: 100%;
+  text-align: justify;
 }
 
 .body-text:last-child {
@@ -372,7 +369,6 @@ onMounted(() => {
 }
 
 .now-list li {
-  /* font-family: "Courier New", Courier, monospace; */
   font-size: clamp(0.92rem, 1.1vw, 1.05rem);
   line-height: 1.6;
   color: #555;
@@ -423,7 +419,6 @@ onMounted(() => {
 }
 
 .tl-year {
-  font-family: "Courier New", Courier, monospace;
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   color: #c9b99a;
@@ -452,7 +447,6 @@ onMounted(() => {
 }
 
 .tl-title {
-  font-family: "Courier New", Courier, monospace;
   font-size: clamp(0.88rem, 1vw, 0.98rem);
   font-weight: 700; /* bold title */
   color: #2d2d2d;
@@ -460,7 +454,6 @@ onMounted(() => {
 }
 
 .tl-text {
-  font-family: "Courier New", Courier, monospace;
   font-size: clamp(0.85rem, 1vw, 0.95rem);
   line-height: 1.6;
   color: #777;
@@ -468,7 +461,6 @@ onMounted(() => {
 }
 
 .tl-continued {
-  font-family: "Courier New", Courier, monospace;
   font-size: 0.82rem;
   color: #bbb;
   margin: 0;
@@ -486,7 +478,6 @@ onMounted(() => {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: "Courier New", Courier, monospace;
   font-size: 0.82rem;
   letter-spacing: 0.05em;
   color: #2d2d2d;
