@@ -86,7 +86,7 @@
           <ScrollReveal animation="fade-up" :delay="0.1" class="now-row">
             <div class="now-text">
               <p class="body-text">
-                currently, i am in a two-year training program at a London-based CHristian charity,
+                currently, i am in a two-year training program at a London-based Christian charity,
                 focusing on biblical studies, leadership development, community engagement, and team building.
               </p>
             </div>
@@ -105,7 +105,7 @@
               </p>
             </div>
             <div class="now-image">
-              <img src="/images/running.png" alt="training life" />
+              <img src="/images/hall3.png" alt="training life" />
             </div>
           </ScrollReveal>
         </div>
