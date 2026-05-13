@@ -91,7 +91,7 @@
               </p>
             </div>
             <div class="now-image">
-              <img src="/images/hall3.png" alt="Training in London" />
+              <img src="/images/bowerhouse.webp" alt="Bower House in London" />
             </div>
           </ScrollReveal>
       
@@ -105,7 +105,7 @@
               </p>
             </div>
             <div class="now-image">
-              <img src="/images/running.png" alt="Coding project" />
+              <img src="/images/running.png" alt="training life" />
             </div>
           </ScrollReveal>
         </div>
