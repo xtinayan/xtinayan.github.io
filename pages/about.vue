@@ -80,21 +80,37 @@
         <ScrollReveal animation="fade-up">
           <h2 class="section-heading">now</h2>
         </ScrollReveal>
-        <ScrollReveal animation="fade-up" :delay="0.1">
-          <ul class="now-list">
-            <li>
-              <span class="arrow">→</span> Full-Time Training Program at Amana Trust,
-              London
-            </li>
-            <li><span class="arrow">→</span> Building this website :)</li>
-            <li class="placeholder"><span class="arrow">→</span> currently reading…</li>
-            <li class="placeholder">
-              <span class="arrow">→</span> currently listening to…
-            </li>
-            <li class="placeholder"><span class="arrow">→</span> currently learning…</li>
-          </ul>
-        </ScrollReveal>
+        
+        <div class="now-content">
+          <!-- First Paragraph (Image Right) -->
+          <ScrollReveal animation="fade-up" :delay="0.1" class="now-row">
+            <div class="now-text">
+              <p class="body-text">
+                currently, i am in a two-year training program at a London-based CHristian charity,
+                focusing on biblical studies, leadership development, community engagement, and team building.
+              </p>
+            </div>
+            <div class="now-image">
+              <img src="/images/hall3.png" alt="Training in London" />
+            </div>
+          </ScrollReveal>
+      
+          <!-- Second Paragraph (Image Left) -->
+          <ScrollReveal animation="fade-up" :delay="0.2" class="now-row">
+            <div class="now-text">
+              <p class="body-text">
+                this is a deliberately different pursuit from my technical background
+                that has strengthened my ability to work in disciplined, diverse, 
+                high-responsibility team settings. 
+              </p>
+            </div>
+            <div class="now-image">
+              <img src="/images/running.png" alt="Coding project" />
+            </div>
+          </ScrollReveal>
+        </div>
       </section>
+
 
       <!-- SECTION 3 — timeline -->
       <section id="timeline" class="content-section">
@@ -359,33 +375,53 @@ onMounted(() => {
 }
 
 /* ── NOW ────────────────────────────────── */
-.now-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* ── NOW SECTION LAYOUT ─────────────────── */
+.now-content {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 4rem; /* Spacing between the two rows */
 }
 
-.now-list li {
-  font-size: clamp(0.92rem, 1.1vw, 1.05rem);
-  line-height: 1.6;
-  color: #555;
+.now-row {
   display: flex;
-  align-items: baseline;
-  gap: 0.65rem;
+  align-items: center;
+  gap: 3rem;
 }
 
-.now-list li.placeholder {
-  color: #bbb;
+/* This targets the second row to flip the image and text */
+.now-row:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
-.arrow {
-  color: #e8a5a5;
-  flex-shrink: 0;
-  font-size: 0.9rem;
+.now-text {
+  flex: 1;
 }
+
+.now-image {
+  flex: 1;
+  max-width: 300px; /* Adjust size as needed */
+}
+
+.now-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive: Stack them on mobile */
+@media (max-width: 767px) {
+  .now-row, 
+  .now-row:nth-child(even) {
+    flex-direction: column-reverse; /* Image on top, text below */
+    gap: 1.5rem;
+  }
+  
+  .now-image {
+    max-width: 100%;
+  }
+}
+
 
 /* ── TIMELINE ───────────────────────────── */
 .timeline {
