@@ -102,14 +102,11 @@ onUnmounted(() => document.removeEventListener("click", handleOutside));
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1.5px solid #2d2d2d;
+  width: 40px;
+  height: 40px;
   text-decoration: none;
   flex-shrink: 0;
   transition: border-color 0.2s ease;
-  background: rgba(250, 248, 245, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
