@@ -52,11 +52,6 @@ export function useProjects() {
             "SAP's cloud operations monitor real-time telemetry across customer systems. Previously, detection relied on brittle, maintenance-heavy rule-based thresholds blind to multi-metric interactions."
         },
 
-        {
-          type: "image",
-          src: "/images/projects/sap-pipeline.jpg",
-          caption: "Telemetry anomaly detection pipeline"
-        },
 
         {
           type: "text",
@@ -154,12 +149,6 @@ export function useProjects() {
         },
 
         {
-          type: "image",
-          src: "/images/projects/servicehub-ui.jpg",
-          caption: "ServiceHub booking interface"
-        },
-
-        {
           type: "text",
           label: "Technical Challenge",
           text:
@@ -208,11 +197,7 @@ export function useProjects() {
             "Contributions include designing authentication flows, implementing calendar integrations, and replacing legacy components with more maintainable Twig-based structures."
         },
 
-        {
-          type: "image",
-          src: "/images/projects/ams-system.jpg",
-          caption: "AMS internal dashboard"
-        },
+  
 
         {
           type: "text",
