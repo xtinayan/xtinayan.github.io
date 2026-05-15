@@ -259,8 +259,11 @@ onMounted(() => {
 /* ── PAGE SHELL ─────────────────────────── */
 .about-page {
   display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: clamp(2.5rem, 3.5vw, 5rem);
+  /* Sidebar scales with screen size */
+  grid-template-columns:
+    clamp(180px, 22vw, 260px)
+    minmax(0, 1fr);
+  gap: clamp(1.5rem, 3.5vw, 5rem);
   width: 100%;
   padding: 5rem 0 8rem;
   align-items: start;
