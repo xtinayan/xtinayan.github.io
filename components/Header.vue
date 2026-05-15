@@ -3,7 +3,7 @@
     <div class="header-inner">
       <!-- Logo -->
       <NuxtLink to="/" class="logo" @click="handleLogoClick">
-        <span class="mono">C<span class="sep">·</span>Y</span>
+        <img src="/logo.png" alt="Logo" class="logo-image" />
       </NuxtLink>
 
       <!-- Desktop nav — floating pill, always visible -->
@@ -114,6 +114,11 @@ onUnmounted(() => document.removeEventListener("click", handleOutside));
   -webkit-backdrop-filter: blur(10px);
 }
 
+.logo-image {
+  height: 40px; /* adjust size */
+  width: 40px;
+  display: block;
+}
 .logo:hover {
   border-color: #e8a5a5;
 }
