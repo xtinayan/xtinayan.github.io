@@ -55,19 +55,23 @@
         <ScrollReveal animation="fade-up" :delay="0">
           <div class="card">
             <h3>ML & AI</h3>
-            <p>NLP, anomaly detection, transformer models</p>
+            <p>
+              NLP, anomaly detection, keyword extraction & generation, transformer models
+            </p>
           </div>
         </ScrollReveal>
         <ScrollReveal animation="fade-up" :delay="0.15">
           <div class="card">
             <h3>Full-Stack Dev</h3>
-            <p>React, Node.js, PHP, TypeScript</p>
+            <p>React, Node.js, PHP, TypeScript, REST APIs, MongoDB, Docker</p>
           </div>
         </ScrollReveal>
         <ScrollReveal animation="fade-up" :delay="0.3">
           <div class="card">
-            <h3>Research</h3>
-            <p>Co-author, KONVENS 2024, NLP publication</p>
+            <h3>People & Communication</h3>
+            <p>
+              Simultaneous interpreter, student mentor, multilingual community supporter
+            </p>
           </div>
         </ScrollReveal>
       </div>
@@ -84,10 +88,15 @@
         </ScrollReveal>
         <ScrollReveal animation="slide-right" class="col">
           <ul class="highlights-list">
-            <li>Graduated top of class — 1st of 260, TUM</li>
-            <li>Co-authored KONVENS 2024 NLP publication</li>
+            <li>graduated top of class from TUM</li>
+            <li>co-authored KONVENS 2024 NLP publication</li>
             <li>ML Engineer at SAP SE</li>
-            <li>Fluent in 3 languages, getting there in a 4th</li>
+            <li>zero German to fluency in 6 months</li>
+            <li>
+              graduated Abitur 1.0 — one of the best in the state, 3 years after arriving
+              in Germany
+            </li>
+            <li>fluent in 3 languages, getting there in a 4th</li>
           </ul>
         </ScrollReveal>
       </div>
@@ -271,6 +280,7 @@
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
   gap: 2rem;
   width: 100%;
 }
@@ -282,6 +292,7 @@
   padding: 1.75rem 1.5rem;
   box-sizing: border-box;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
 }
 
 .card:hover {

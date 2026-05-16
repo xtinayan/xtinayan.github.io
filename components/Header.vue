@@ -3,7 +3,7 @@
     <div class="header-inner">
       <!-- Logo -->
       <NuxtLink to="/" class="logo" @click="handleLogoClick">
-        <img src="/logo.png" alt="Logo" class="logo-image" />
+        <img src="/favicon.ico" alt="Logo" class="logo-image" />
       </NuxtLink>
 
       <!-- Desktop nav — floating pill, always visible -->

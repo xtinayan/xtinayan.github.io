@@ -4,7 +4,7 @@
     <aside class="left-col">
       <!-- Avatar -->
       <div class="avatar-wrap">
-        <img src="/favicon.png" alt="Christina Yan" class="avatar" />
+        <img src="/ich.png" alt="me" class="avatar" />
       </div>
 
       <!-- Anchor nav -->
@@ -80,37 +80,37 @@
         <ScrollReveal animation="fade-up">
           <h2 class="section-heading">now</h2>
         </ScrollReveal>
-        
+
         <div class="now-content">
           <!-- First Paragraph (Image Right) -->
           <ScrollReveal animation="fade-up" :delay="0.1" class="now-row">
             <div class="now-text">
               <p class="body-text">
-                currently, i am in a two-year training program at a London-based Christian charity,
-                focusing on biblical studies, leadership development, community engagement, and team building.
+                Currently, i am in a two-year training program at a London-based Christian
+                charity, focusing on biblical studies, leadership development, community
+                engagement, and team building.
               </p>
             </div>
             <div class="now-image">
               <img src="/images/bowerhouse.webp" alt="Bower House in London" />
             </div>
           </ScrollReveal>
-      
+
           <!-- Second Paragraph (Image Left) -->
           <ScrollReveal animation="fade-up" :delay="0.2" class="now-row">
             <div class="now-text">
               <p class="body-text">
-                this is a deliberately different pursuit from my technical background
-                that has strengthened my ability to work in disciplined, diverse, 
-                high-responsibility team settings. 
+                This is a deliberately different pursuit from my technical background that
+                has strengthened my ability to work in disciplined, diverse,
+                high-responsibility team settings.
               </p>
             </div>
             <div class="now-image">
-              <img src="/images/hall3.png" alt="training life" />
+              <img src="/images/running.png" alt="training life" />
             </div>
           </ScrollReveal>
         </div>
       </section>
-
 
       <!-- SECTION 3 — timeline -->
       <section id="timeline" class="content-section">
@@ -197,7 +197,7 @@ const timelineEvents = [
   { year: "2001", title: "Born in China 🇨🇳" },
   {
     year: "2010",
-    title: "5 month study abroad in California 🇺🇸",
+    title: "Lived in California for half a year 🇺🇸",
   },
   {
     year: "March 2017",
@@ -409,22 +409,20 @@ onMounted(() => {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* Responsive: Stack them on mobile */
 @media (max-width: 767px) {
-  .now-row, 
+  .now-row,
   .now-row:nth-child(even) {
     flex-direction: column-reverse; /* Image on top, text below */
     gap: 1.5rem;
   }
-  
+
   .now-image {
     max-width: 100%;
   }
 }
-
 
 /* ── TIMELINE ───────────────────────────── */
 .timeline {

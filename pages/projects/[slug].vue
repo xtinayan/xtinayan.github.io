@@ -168,7 +168,9 @@ useHead({
   margin: 0;
 
   font-family: "Courier New", Courier, monospace;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
   letter-spacing: 0.04em;
 
   color: #c9b99a;
