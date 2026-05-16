@@ -23,7 +23,7 @@
           </ScrollReveal>
 
           <div class="timeline">
-            <!-- ITEM -->
+            <!-- Amana Trust -->
             <div class="timeline-item">
               <ScrollReveal animation="fade-up" :delay="0.1">
                 <div class="timeline-card">
@@ -40,33 +40,37 @@
                     </div>
                   </div>
 
-                  <p class="description">Two-year Full-time Training program.</p>
+                  <p class="description">Two-year Full-time Training program</p>
 
                   <ul class="description-list">
-                    <li>Built and maintained internal PHP MVC systems for operations</li>
+                    <li>
+                      Maintained and enhanced internal PHP MVC systems for operations
+                    </li>
 
                     <li>
                       Mentored university students in technical and personal development
                     </li>
 
-                    <li>Worked within an international outreach and community team</li>
+                    <li>Worked within an international team for outreach initiatives</li>
                   </ul>
 
                   <div class="tags">
-                    <span class="tag">Full-Stack</span>
+                    <span class="tag">Web Development</span>
                     <span class="tag">Community</span>
                   </div>
                 </div>
               </ScrollReveal>
             </div>
 
-            <!-- ITEM -->
+            <!-- SAP -->
             <div class="timeline-item">
               <ScrollReveal animation="fade-up" :delay="0.2">
                 <div class="timeline-card">
                   <div class="card-top">
                     <div class="card-meta">
-                      <h2 class="role-title">SAP SE | Machine Learning Engineer</h2>
+                      <h2 class="role-title">
+                        SAP SE | Machine Learning Engineer (Dual Master's)
+                      </h2>
                     </div>
 
                     <div class="meta-right">
@@ -75,17 +79,33 @@
                     </div>
                   </div>
 
+                  <p class="description">
+                    Anomaly detection in large-scale telemetry data using machine learning
+                  </p>
+
                   <ul class="description-list">
-                    <li>Developed anomaly detection systems for telemetry data</li>
+                    <li>
+                      Analysis of existing rule-based detection algorithms, identifying
+                      limitations and improvement areas
+                    </li>
 
-                    <li>Built ML pipelines for severity classification workflows</li>
+                    <li>
+                      Built ETL processes for data preprocessing, feature engineering, and
+                      exploratory analysis on operational monitoring datasets
+                    </li>
 
-                    <li>Worked with Scikit-learn, Pandas, and NumPy</li>
+                    <li>Training and evaluation of machine learning models</li>
+
+                    <li>
+                      Developed a ML-based pipeline for automated severity classification
+                      workflows
+                    </li>
                   </ul>
 
                   <div class="tags">
                     <span class="tag">Machine Learning</span>
                     <span class="tag">Python</span>
+                    <span class="tag">Anomaly Detection</span>
                   </div>
                 </div>
               </ScrollReveal>
@@ -100,7 +120,67 @@
           </ScrollReveal>
 
           <div class="projects-grid">
-            <!-- PROJECT -->
+            <!-- Anomaly detection -->
+            <ScrollReveal animation="fade-up" :delay="0.3">
+              <NuxtLink to="/projects/ml-anomaly-pipeline" class="project-card">
+                <div class="project-header">
+                  <h2 class="project-name">
+                    Anomaly Detection & Severity Classification
+                  </h2>
+
+                  <span class="badge-pub"> Industry </span>
+                </div>
+
+                <p class="project-venue">SAP SE · Mar — Aug 2024</p>
+
+                <ul class="description-list">
+                  <li>ETL processes on operational monitoring datasets</li>
+                  <li>Training & evaluation of machine learning models</li>
+
+                  <li>ML-based pipeline for automated priority labeling.</li>
+                </ul>
+
+                <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Machine Learning</span>
+                  <span class="tag">Data Preprocessing</span>
+                  <span class="tag">Feature Engineering</span>
+                </div>
+                <span class="card-arrow">→</span>
+              </NuxtLink>
+            </ScrollReveal>
+
+            <!-- CD4AI -->
+            <ScrollReveal animation="fade-up" :delay="0.3">
+              <NuxtLink to="/projects/createdata4ai" class="project-card">
+                <div class="project-header">
+                  <h2 class="project-name">CreateData4AI</h2>
+
+                  <span class="badge-pub"> Publication </span>
+                </div>
+
+                <p class="project-venue">KONVENS 2024 · Feb — Sep 2023</p>
+
+                <ul class="description-list">
+                  <li>Co-authored published NLP research paper</li>
+
+                  <li>Built keyword extraction pipeline with +28% improvement</li>
+
+                  <li>Published at KONVENS 2024 conference</li>
+                </ul>
+
+                <div class="tags">
+                  <span class="tag">NLP</span>
+                  <span class="tag">Keyword Extraction</span>
+                  <span class="tag">Keyword Generation</span>
+                  <span class="tag">Domain-specific</span>
+                  <span class="tag">Transformers</span>
+                  <span class="tag">Python</span>
+                </div>
+                <span class="card-arrow">→</span>
+              </NuxtLink>
+            </ScrollReveal>
+
             <ScrollReveal animation="fade-up" :delay="0.1">
               <NuxtLink to="/projects/ams" class="project-card">
                 <div class="project-header">
@@ -149,34 +229,6 @@
                   <span class="tag">Node.js</span>
                   <span class="tag">MongoDB</span>
                   <span class="tag">Docker</span>
-                </div>
-                <span class="card-arrow">→</span>
-              </NuxtLink>
-            </ScrollReveal>
-
-            <!-- PROJECT -->
-            <ScrollReveal animation="fade-up" :delay="0.3">
-              <NuxtLink to="/projects/createdata4ai" class="project-card">
-                <div class="project-header">
-                  <h2 class="project-name">CreateData4AI</h2>
-
-                  <span class="badge-pub"> Publication </span>
-                </div>
-
-                <p class="project-venue">KONVENS 2024 · Feb — Sep 2023</p>
-
-                <ul class="description-list">
-                  <li>Co-authored published NLP research paper</li>
-
-                  <li>Built keyword extraction pipeline with +28% improvement</li>
-
-                  <li>Published at KONVENS 2024 conference</li>
-                </ul>
-
-                <div class="tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">NLP</span>
-                  <span class="tag">Transformers</span>
                 </div>
                 <span class="card-arrow">→</span>
               </NuxtLink>

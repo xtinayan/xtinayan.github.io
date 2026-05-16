@@ -42,7 +42,7 @@ export function useProjects() {
       summary:
         "A machine learning pipeline replacing manual, rule-based anomaly classification for cloud telemetry data.",
 
-      tags: ["Python", "scikit-learn", "XGBoost", "PySpark"],
+      tags: ["Python", "scikit-learn", "XGBoost", "PySpark", "RandomForest"],
 
       content: [
         {

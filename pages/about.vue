@@ -38,16 +38,16 @@
           aria-label="Instagram"
           ><i class="fab fa-instagram"></i
         ></a>
-        <a
+        <!-- <a
           href="https://facebook.com/xtinaxyan"
           target="_blank"
           rel="noopener"
           aria-label="Facebook"
           ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a href="mailto:christinayan2001@gmail.com" aria-label="Email"
+        ></a> -->
+        <!-- <a href="mailto:christinayan2001@gmail.com" aria-label="Email"
           ><i class="fas fa-envelope"></i
-        ></a>
+        ></a> -->
       </div>
     </aside>
 
