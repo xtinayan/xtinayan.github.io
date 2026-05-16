@@ -2,7 +2,9 @@
   <div class="not-found">
     <p class="error-code">404</p>
     <h1 class="error-heading">hmm, nothing here :(</h1>
-    <p class="error-sub">that page doesn't exist — maybe it moved, or the link was off.</p>
+    <p class="error-sub">
+      that page doesn't exist — maybe it moved, or the link was off.
+    </p>
     <NuxtLink to="/" class="home-btn">take me home :)</NuxtLink>
   </div>
 </template>
@@ -49,8 +51,8 @@
   align-items: center;
   justify-content: center;
   width: clamp(120px, 13vw, 150px);
-  height: clamp(120px, 13vw, 150px);
-  border-radius: 50%;
+  height: clamp(20px, 10vw, 50px);
+  border-radius: 15px;
   background: #2d2d2d;
   color: #faf8f5;
   font-family: "Cormorant Garamond", serif;
